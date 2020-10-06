@@ -74,7 +74,7 @@ class ReadyConvert extends Model
         $temp_convert = 'convert_'.$filename;
         $user = trim($val->user_id);
 
-            $path = '../views/web/converts/'; // - путь до создаваемой папки.
+            $path = '../web/converts/'; // - путь до создаваемой папки.
             $mode = '0755';               // - права на создаваемую папку.
             $recursive = true;            // - несуществующие папки будут воссозданы.
             if (!file_exists($path. $user)) {
@@ -95,13 +95,13 @@ class ReadyConvert extends Model
         switch ($number)
         {
             case '1':
-                $start = [130, 145];
+                $start = [130, 142];
                 break;
             case '2':
                 $start = [330, 97];
                 break;
             case '3':
-                $start = [235, 380];
+                $start = [235, 377];
                 $fontOptions = [
                     'size'  => 15,    // Размер шрифта
                     'color' => '000', // цвет шрифта
@@ -119,13 +119,13 @@ class ReadyConvert extends Model
             switch ($number)
             {
                 case '1':
-                    $start = [130, 190];
+                    $start = [130, 187];
                     break;
                 case '2':
                     $start = [330, 117];
                     break;
                 case '3':
-                    $start = [235, 410];
+                    $start = [235, 407];
                     break;
             }
 
@@ -137,13 +137,13 @@ class ReadyConvert extends Model
             switch ($number)
             {
                 case '1':
-                    $start = [235, 235];
+                    $start = [235, 232];
                     break;
                 case '2':
                     $start = [440, 157];
                     break;
                 case '3':
-                    $start = [450, 498];
+                    $start = [450, 495];
                     break;
             }
 
@@ -155,13 +155,13 @@ class ReadyConvert extends Model
             switch ($number)
             {
                 case '1':
-                    $start = [440, 370];
+                    $start = [440, 368];
                     break;
                 case '2':
-                    $start = [310, 173];
+                    $start = [310, 176];
                     break;
                 case '3':
-                    $start = [635, 612];
+                    $start = [635, 609];
                     break;
             }
 
@@ -173,13 +173,13 @@ class ReadyConvert extends Model
             switch ($number)
             {
                 case '1':
-                    $start = [440, 420];
+                    $start = [440, 417];
                     break;
                 case '2':
                     $start = [310, 217];
                     break;
                 case '3':
-                    $start = [635, 678];
+                    $start = [635, 675];
                     break;
             }
 
@@ -191,13 +191,13 @@ class ReadyConvert extends Model
             switch ($number)
             {
                 case '1':
-                    $start = [430, 485];
+                    $start = [430, 482];
                     break;
                 case '2':
                     $start = [300, 297];
                     break;
                 case '3':
-                    $start = [620, 796];
+                    $start = [620, 791];
                     break;
             }
 

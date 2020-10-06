@@ -52,7 +52,7 @@ class MyRbacController extends Controller {
         $auth->addChild($editor,$updateOwnNews);
 
         // админ имеет собственное разрешение - «Редактирование новости»
-        $auth->addChild($admin, $updateNews);
+        $auth->addChild($editor, $updateNews);
 
         // Еще админ имеет собственное разрешение - «Просмотр админки»
         $auth->addChild($admin, $viewAdminPage);
