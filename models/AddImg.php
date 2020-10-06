@@ -19,10 +19,16 @@ class AddImg extends Model
         ];
     }
 
-    public function upload()
+     public function upload()
     {
         $imageName = time();
         $this->imageFile = UploadedFile::getInstance($this, 'imageFile');
+        $path = '../web/converts/'; // - путь до создаваемой папки.
+        $mode = '0755';               // - права на создаваемую папку.
+        $recursive = true;            // - несуществующие папки будут воссозданы.
+        if (!file_exists($path. 'offer')) {
+            mkdir($path . 'offer', $mode, $recursive);
+        }
         $this->imageFile->saveAs('../web/converts/offer/'.Yii::$app->user->identity->username.'_'.$imageName.'.'.$this->imageFile->extension);
         return true;
 
