@@ -7,6 +7,7 @@
 </p>
 
 Для работы приложения необходимо:
+
     1.Установить и обновить composer: 
         composer self-update
         composer install
