@@ -23,3 +23,5 @@
         
     5. Добавить данные в таблицу RBAC: 
         yii my-rbac/init
+        
+    6. В файле config/params.php изменить adminEmail и supportEmail на свой.
